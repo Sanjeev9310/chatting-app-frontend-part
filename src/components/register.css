@@ -1,0 +1,42 @@
+.register{
+   width:100vw;
+   height:100vh;
+   background-color: rgb(240, 227, 221);
+}
+.form-sectionR{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width:25rem;
+   height:max-content;
+}
+.formR{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   width:100%;
+   height:max-content;
+   border: 2px solid;
+   border-radius: 5px;
+   padding:1.3rem;
+   background-color: rgb(113, 191, 239);
+}
+.form-headingR{
+   font-size:20px;
+   color: rgb(43, 43, 239);
+}
+.form-inputR{
+   display:flex;
+   flex-direction: column;
+   row-gap:1rem;
+   width:100%;
+   height: 100%;
+}
+.inputR{
+   width:100%;
+   height:2rem;
+}
+.label{
+   font-size:1.2rem;
+}

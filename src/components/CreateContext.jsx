@@ -1,0 +1,6 @@
+import React from 'react'
+import { createContext } from 'react'
+
+const CreateContext =createContext();
+
+export default CreateContext
