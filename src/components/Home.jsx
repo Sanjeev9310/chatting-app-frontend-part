@@ -152,8 +152,16 @@ const handleClick=async(user) =>{
           }
         )
         // setChat(singleChat.data);
-        setChatData(prev=>[singleChat.data,...prev]);
+        // setChatData(prev=>[singleChat.data,...prev]);
+        setChatData((prev) =>
+          prev.find(c => c._id === singleChat.data._id)?
+          prev.map(c =>
+          c._id === singleChat.data._id ? singleChat.data : c
+      )
+    : prev
+);
         dispatch(openChat(singleChat.data))
+        setShowChatStatus(false);
         console.log("new chat will shown here")
         console.log(singleChat);
       
