@@ -3,6 +3,9 @@
    height:100vh;
    background-color: rgb(240, 227, 221);
 }
+.title{
+   color:rgb(53, 164, 114);
+}
 .form-sectionR{
    display: flex;
    justify-content: center;

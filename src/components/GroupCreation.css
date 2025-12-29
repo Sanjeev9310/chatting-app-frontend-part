@@ -15,15 +15,20 @@
     display: none;
 }
 .group-chat-model{
-    left:50%;
-    top:30%;
+    left:35%;
+    top:20%;
     position: absolute;
     /* background: rgb(255, 255, 255); */
-    width:min-content;
-    height:auto;
+    width:fit-content;
+    height:fit-content;
+    max-height:600px;
+    overflow: auto;
     border: 1px solid #f7e7e7;
     box-shadow: 0 0 10px rgba(7, 7, 7, 0.1);
     border-radius: 5px;
+}
+.group-chat-model::-webkit-scrollbar{
+   display: none;
 }
 .users-div{
     display: flex;
@@ -35,7 +40,7 @@
 }
 .group-user-list{
     display: flex;
-    column-gap: 2px;
+    /* column-gap: 2px; */
     border:1px solid;
     background-color: rgb(201, 151, 247);
     color:black;
